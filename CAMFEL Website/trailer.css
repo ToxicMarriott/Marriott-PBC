@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+header li a:hover {
+    box-shadow: 0 0 20px 1px #717171;
+    transition: all 400ms ease-in-out;
+    border-radius: 10px;
+  }
+  
+  header .d-none a:hover {
+    box-shadow: 0 0 20px 1px #717171;
+    transition: all 400ms ease-in-out;
+    color: #717171;
+    border-radius: 50%;
+  }
+  
+  header.sticky-top {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  
+  header.sticky-top.scrolled {
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526); 
+    }
+  
+  
+  
+  .text-facebook {
+    color: #1877f2;
+  }
+  .text-tiktok {
+    color: #000000;
+  }
+  
+  .text-instagram {
+    color: #e4405f;
+  }
+
+h1,h2{
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to bottom, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to bottom, #e2e2e2, #c9d6ff);
+}
+footer {
+  background: #fdc830;
+  background: -webkit-linear-gradient(to left, #f37335, #fdc830);
+  background: linear-gradient(to left, #f37335, #fdc830);
+  color: rgb(0, 0, 0);
+}
+
+footer a:hover {
+  color: white;
+  transition: all 400ms ease-in-out;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#camion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100%;
+  background-image: url(/images/trailer.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+#camion::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+}
+
+#camion h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+.vide {
+  padding: 25vh;
+}
+@media (max-width: 768px) {
+  .vide {
+    padding: 15vh;
+  }
+}
+
+#news {
+  z-index: 4;
+}
+#news img {
+  border-radius: 10px;
+  position: relative;
+}
+.carousel-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+
+#camion h6 {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
